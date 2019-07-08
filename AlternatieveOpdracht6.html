@@ -1,0 +1,37 @@
+<script>
+	function oefening(){
+		var mijnArray = ["Ab crunches", "Pull ups", "Push ups", "Dips"];
+        var x = Math.floor(Math.random() * mijnArray.length);
+        console.log(mijnArray[x]);
+
+        var oefeningDiv = document.getElementById("oefeningDiv");
+		oefeningDiv.innerHTML = mijnArray[x];
+	}
+    function sets(){
+        var mijnArray = ["3", "4", "5", "6"];
+        var x = Math.floor(Math.random() * mijnArray.length);
+        console.log(mijnArray[x]);
+
+        var setsDiv = document.getElementById("setsDiv");
+		setsDiv.innerHTML = mijnArray[x];
+		
+	}
+    function herhalingen(){
+		var mijnArray = ["8", "10", "12", "20"];
+        var x = Math.floor(Math.random() * mijnArray.length);
+        console.log(mijnArray[x]);
+
+        var herhalingenDiv = document.getElementById("herhalingenDiv");
+		herhalingenDiv.innerHTML = mijnArray[x];
+	}
+</script>
+<style>
+
+</style>
+Workout<br><br>
+<input type=button onclick="oefening()" value="Oefening"><br><br>
+<div id=oefeningDiv></div><br>
+<input type=button onclick="sets()" value="Sets"><br><br>
+<div id=setsDiv></div><br>
+<input type=button onclick="herhalingen()" value="Herhalingen"><br><br>
+<div id=herhalingenDiv></div><br>
